@@ -11,7 +11,7 @@ describe "Associations" do
 
   context 'Owner instance methods' do
     describe "#cats" do
-      it "returnsa a collection of all the cats that belong to the owner" do
+      xit "returnsa a collection of all the cats that belong to the owner" do
         cat_1 = Cat.new("Garfield", @owner)
         cat_2 = Cat.new("Fido", @owner)
         cat_3 = Cat.new("Whiskers", @owner)
@@ -24,7 +24,7 @@ describe "Associations" do
     end
 
     describe "#dogs" do
-      it "returnsa a collection of all the dogs that belong to the owner" do
+      xit "returnsa a collection of all the dogs that belong to the owner" do
         dog_1 = Dog.new("Fido", @owner)
         dog_2 = Dog.new("Snuffles", @owner)
         dog_3 = Dog.new("Charley", @owner)
@@ -36,7 +36,7 @@ describe "Associations" do
       end
     end
     describe "#buy_cat" do
-      it 'can buy a cat that is an instance of the Cat class' do
+      xit 'can buy a cat that is an instance of the Cat class' do
         expect(@owner.cats.count).to eq(0)
 
         @owner.buy_cat("Crookshanks")
@@ -50,7 +50,7 @@ describe "Associations" do
         expect(@owner.cats.count).to eq(3)
       end
 
-      it 'knows about its cats' do
+      xit 'knows about its cats' do
         @owner.buy_cat("Crookshanks")
         @owner.buy_cat("Whiskers")
         @owner.buy_cat("Garfield")
@@ -62,7 +62,7 @@ describe "Associations" do
     end
 
     describe "#buy_dog" do
-      it 'can buy a dog that is an instance of the Dog class' do
+      xit 'can buy a dog that is an instance of the Dog class' do
         expect(@owner.dogs.count).to eq(0)
 
         @owner.buy_dog("Snuffles")
@@ -76,7 +76,7 @@ describe "Associations" do
         expect(@owner.dogs.count).to eq(3)
       end
 
-      it 'knows about its dogs' do
+      xit 'knows about its dogs' do
         @owner.buy_dog("Snuffles")
         @owner.buy_dog("Fido")
         @owner.buy_dog("Rover")
