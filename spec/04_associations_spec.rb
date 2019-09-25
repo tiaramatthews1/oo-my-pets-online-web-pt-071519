@@ -115,7 +115,7 @@ describe "Associations" do
         [fido, tabby].each { |o| expect(o.mood).to eq("nervous") }
       end
 
-      it 'can sell all its pets, which leaves them without an owner' do
+      xit 'can sell all its pets, which leaves them without an owner' do
         fido = Dog.new("Fido", @owner)
         tabby = Cat.new("Tabby", @owner)
 
@@ -130,7 +130,7 @@ describe "Associations" do
     end
 
     describe "#list_pets" do
-      it 'can list off its pets' do
+      xit 'can list off its pets' do
         @owner.buy_cat("Crookshanks")
         @owner.buy_cat("Fido")
         @owner.buy_dog("Snuffles")
